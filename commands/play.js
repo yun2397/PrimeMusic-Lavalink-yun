@@ -154,7 +154,10 @@ async function play(client, interaction, lang) {
             }
         }
 
-        if (!player.playing && !player.paused) player.play();
+if (!player.playing && !player.paused) {
+    player.setVolume(10);  // 여기!
+    player.play();
+}
 
         const randomEmbed = new EmbedBuilder()
         .setColor(config.embedColor)
