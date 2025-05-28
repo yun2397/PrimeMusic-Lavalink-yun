@@ -155,7 +155,7 @@ async function play(client, interaction, lang) {
         }
 
 if (!player.playing && !player.paused) {
-    player.setVolume(10);  // 여기!
+    player.setVolume(20);  // 여기!
     player.play();
 }
 
